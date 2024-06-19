@@ -1,0 +1,15 @@
+﻿
+<div class="eleccion">
+	<ul>
+		<li>
+			<img src="@ViewBag.Paises[0].Image" alt="image" />
+			<a href='@Url.Action("Apuesta",new{idPartido = ViewBag.idPartido, winner = 1, idUsuario = ViewBag.idUsuario})' type="button" class="btn btn-success">Gana @ViewBag.Paises[0].Name</a>
+		</li>
+		<li><a href='@Url.Action("Apuesta",new{idPartido = ViewBag.idPartido, winner = 3, idUsuario = ViewBag.idUsuario})' type="button" class="btn btn-warning">Empate</a></li>
+		<li>
+			<img src="@ViewBag.Paises[1].Image" alt="image" />
+			<a href='@Url.Action("Apuesta",new{idPartido = ViewBag.idPartido, winner = 2, idUsuario = ViewBag.idUsuario})' type="button" class="btn btn-success">Gana @ViewBag.Paises[1].Name</a>
+		</li>
+	</ul>
+</div>
+
